@@ -1,12 +1,13 @@
 # ElementAnimation
 HTML Element Loading Animation
 
-##Setup
+## Setup
 To make the HTML element loading animations available in your application, you need to include both the JavaScript and CSS file
+```
 <link rel="stylesheet" href="/aco.loading-animations.1.0.1.css" type="text/css" />
 <script src="/aco.loading-animations.1.0.1.js" type="text/javascript"></script>
-
-##Configurations
+```
+## Configurations
 * You can configure the animations in the JavaScript file. 
 * The animations of the HTML elements are triggered one after another. 
 * You can set the delay between the animation of each element in the HTMLElementLoadingAnimation class. 
@@ -17,7 +18,7 @@ To make the HTML element loading animations available in your application, you n
 this.delay = 150;
 ```
 
-##How to use
+## How to use
 For animating an element, you only have to add the aco-load-animation class and the class of your desired animation to the HTML element i.e.
 
 ```
@@ -34,7 +35,7 @@ You can choose between seven different animations. The following list presents t
 * Slide Left: aco-slide-left
 * Unfold: aco-unfold
 
-##Examples
+## Examples
 You can add a loading animation to any kind of HTML element by adding the aco-load-animation class and the class of the animation
 
 ```
