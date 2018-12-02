@@ -1,0 +1,138 @@
+/*------------------------------------------------------------------
+    [CSS STRUCTURE]
+    * Load Animation Class / .eac-mount-animation
+        + Grow Animation Class / .eac-mount-animation.aco-grow.is-visible
+        + Shrink Animation Class / .eac-mount-animation.aco-shrink.is-visible
+        + Slide Up Animation Class / .eac-mount-animation.aco-slide-up.is-visible
+        + Slide Right Animation Class / .eac-mount-animation.aco-slide-right.is-visible
+        + Slide Down Animation Class / .eac-mount-animation.aco-slide-down.is-visible
+        + Slide Left Animation Class / .eac-mount-animation.aco-slide-left.is-visible
+        + Unfold Animation Class / .eac-mount-animation.aco-unfold.is-visible
+
+    * Grow Keyframe Animation / AcoGrowAnimation
+    * Shrink Keyframe Animation / AcoShrinkAnimation
+    * Slide Up Keyframe Animation / AcoSlideUpAnimation
+    * Slide Right Keyframe Animation / AcoSlideRightAnimation
+    * Slide Down Keyframe Animation / AcoSlideDownAnimation
+    * Slide Left Keyframe Animation / AcoSlideLeftAnimation
+    * Unfold Keyframe Animation / AcoUnfoldAnimation
+
+    -------------------------------------------------------------------*/
+
+.eac-mount-animation{
+    opacity: 0;
+}
+.eac-mount-animation.is-visible{
+    opacity: 1;
+}
+
+/**
+ * You can change the duration and easing of each animation here
+ */
+.eac-mount-animation.aco-grow.is-visible{
+    animation: AcoGrowAnimation 600ms ease-in;
+}
+.eac-mount-animation.aco-shrink.is-visible{
+    animation: AcoShrinkAnimation 600ms ease-in;
+}
+.eac-mount-animation.aco-slide-up.is-visible{
+    animation: AcoSlideUpAnimation 400ms ease-out;
+}
+.eac-mount-animation.aco-slide-right.is-visible{
+    animation: AcoSlideRightAnimation 400ms ease-out;
+}
+.eac-mount-animation.aco-slide-down.is-visible{
+    animation: AcoSlideDownAnimation 400ms ease-out;
+}
+.eac-mount-animation.aco-slide-left.is-visible{
+    animation: AcoSlideLeftAnimation 400ms ease-out;
+}
+.eac-mount-animation.aco-unfold.is-visible{
+    animation: AcoUnfoldAnimation 600ms ease-in;
+}
+
+
+/**
+ * The keyframe animations
+ */
+@keyframes AcoGrowAnimation{
+    0% {
+        transform: scale(0.3);
+    }
+    60% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes AcoShrinkAnimation{
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    60% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes AcoSlideUpAnimation{
+    from {
+        opacity: 0;
+        transform: translate(0,50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes AcoSlideRightAnimation{
+    from {
+        opacity: 0;
+        transform: translate(-50px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes AcoSlideDownAnimation{
+    from {
+        opacity: 0;
+        transform: translate(0,-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes AcoSlideLeftAnimation{
+    from {
+        opacity: 0;
+        transform: translate(50px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes AcoUnfoldAnimation{
+    0% {
+        transform: rotateY(-90deg);
+    }
+    60% {
+        transform: rotateY(20deg);
+    }
+    100% {
+        transform: rotateY(0);
+    }
+}
