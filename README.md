@@ -27,13 +27,13 @@ For animating an element, you only have to add the eac-mount-animation class and
 
 You can choose between seven different animations. The following list presents the animations and the class you would have to add to an HTML element to enable the animation:
 
-* Grow: eac-grow
-* Shrink: eac-shrink
-* Slide Up: eac-slide-up
-* Slide Right: eac-slide-right
-* Slide Down: eac-slide-down
-* Slide Left: eac-slide-left
-* Unfold: eac-unfold
+* **Grow:** eac-grow
+* **Shrink:** eac-shrink
+* **Slide Up:** eac-slide-up
+* **Slide Right:** eac-slide-right
+* **Slide Down:** eac-slide-down
+* **Slide Left:** eac-slide-left
+* **Unfold:** eac-unfold
 
 ## Examples
 You can add a loading animation to any kind of HTML element by adding the eac-mount-animation class and the class of the animation
