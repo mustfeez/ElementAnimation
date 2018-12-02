@@ -19,10 +19,10 @@ this.delay = 150;
 ```
 
 ## How to use
-For animating an element, you only have to add the eac-load-animation class and the class of your desired animation to the HTML element i.e.
+For animating an element, you only have to add the eac-mount-animation class and the class of your desired animation to the HTML element i.e.
 
 ```
-<div class="eac-load-animation eac-grow"></div>
+<div class="eac-mount-animation eac-grow"></div>
 ```
 
 You can choose between seven different animations. The following list presents the animations and the class you would have to add to an HTML element to enable the animation:
@@ -36,12 +36,12 @@ You can choose between seven different animations. The following list presents t
 * Unfold: eac-unfold
 
 ## Examples
-You can add a loading animation to any kind of HTML element by adding the eac-load-animation class and the class of the animation
+You can add a loading animation to any kind of HTML element by adding the eac-mount-animation class and the class of the animation
 
 ```
-<h2 class="eac-load-animation eac-slide-down"> ... </h2>
+<h2 class="eac-mount-animation eac-slide-down"> ... </h2>
 ```
 You can add an animation even if there is already a custom class defined on the HTML element.
 ```
-<p class="eac-load-animation eac-unfold your-custom-class"> ... </p>
+<p class="eac-mount-animation eac-unfold your-custom-class"> ... </p>
 ```
